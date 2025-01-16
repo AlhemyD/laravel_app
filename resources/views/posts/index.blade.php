@@ -17,7 +17,7 @@
         </div>
         <ul class="list-group">
             @foreach ($posts as $post)
-				<?php echo "Отложенное время публикации: {{$post->publish_at}}" ?>
+				
                 <li class="list-group-item">
                     <h5 class="mb-1">{{ $post->title }}</h5>
                     <p class="mb-1">{{ Str::limit($post->content, 100) }}</p>
